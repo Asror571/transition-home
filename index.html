@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sodda Sayt</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Company</div>
+    <button class="toggle-btn" onclick="toggleTheme()">Light Mode</button>
+  </header>
+
+  <main>
+    <div class="text">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut tincidunt enim porta ne</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut tincidunt enim porta ne</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut tincidunt enim porta ne</p>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        
+        <div class="slide-content">
+          <img class="slider-image" src="./public/1.jpg" alt="Rasm 1" />
+          <img class="slider-image" src="./public/2.jpg" alt="Rasm 2" />
+          <img class="slider-image" src="./public/3.jpg" alt="Rasm 3" />
+        </div>
+
+        <div class="controls">
+          <label for="slide1">❮</label>
+          <label for="slide2">○</label>
+          <label for="slide3">❯</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut tincidunt enim porta ne</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut tincidunt enim porta ne</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id purus nisi, in rutrum nunc. Donec non orci eros, ut sollicitudin risus. Vivamus at lacinia enim. Nam tincidunt nisl eget erat sollicitudin vitae accumsan felis eleifend. Phasellus eu ante non magna egestas tincidunt ut varius lorem. Nunc ornare feugiat ligula, ut tincidunt enim porta ne</p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Created by Asror Kurbonazarov</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const btn = document.querySelector('.toggle-btn');
+      if (document.body.classList.contains('dark')) {
+        btn.textContent = 'Dark Mode';
+      } else {
+        btn.textContent = 'Light Mode';
+      }
+    }
+  </script>
+</body>
+</html>
